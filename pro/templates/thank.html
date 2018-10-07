@@ -1,0 +1,74 @@
+{% load widget_tweaks %}{% load static %}<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Thank You</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'index.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="refresh" content="10;url=http://127.0.0.1:8000/index.html">
+</head>
+<body>
+<div id="sidenav" class="sidenav">
+    <br>
+    <br>
+    <br>
+    <a href="#abt">About&nbsp;<i class="glyphicon glyphicon-info-sign"></i></a>
+    <br>
+    <hr>
+    <br>
+    <a href="contact.html">Contact&nbsp;<i class="glyphicon glyphicon-earphone"></i></a>
+</div>
+<div id="main">
+    <a href="javascript:" id="topbtn" onclick="topbtn()" title="Go To Top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <header id=head class="container">
+        <div class="row" style="width: 100%">
+            <h2 class="col-sm-4"><a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a></h2>
+            <nav class="col-sm-8">
+            </nav>
+            <p id="web" onclick="menu()">MENU</p>
+            <div id=menu class="menu" onclick="menu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+    <br><br>
+    <div style="color: black;text-align:center;font-size: large">
+        <p style="font-size: 40px;"><b>Thank you {{fa.name}} ! </b></p>
+        <br><br>
+        <p>Your message has been received</p><br>
+        <p>You will be contacted regarding this message in 48 hours on your Email : </p><br>
+        <p><b>{{fa.email}}</b></p><br>
+        <p>We appreciate your feedback</p><br>
+        <p>Automatically redirecting to Home page in 10 seconds</p>
+    </div>
+    <br><br><br><br><br><br><br>
+    <footer id=foot class="container">
+        <div class="row">
+            <h1 class="col-sm-4" style="top: -8px;left:10px">
+                <a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a>
+            </h1>
+            <ul class="col-sm-8" style="top: 0;">
+                <li>
+                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour" style="text-decoration: none" class="fa fa-facebook"></a>
+                </li>
+                <li >
+                    <a href="https://twitter.com/DtuSoc" style="text-decoration: none" class="fa fa-twitter"></a>
+                </li>
+                <li >
+                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none" class="fa fa-instagram"></a>
+                </li>
+                <li >
+                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none" class="fa fa-youtube"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parchhayi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'index.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="sidenav" class="sidenav">
+    <br>
+    <br>
+    <br>
+    <a href="#abt">About&nbsp;<i class="glyphicon glyphicon-info-sign"></i></a>
+    <br>
+    <hr>
+    <br>
+    <a href="contact.html">Contact&nbsp;<i class="glyphicon glyphicon-earphone"></i></a>
+</div>
+<div id="main">
+    <a href="javascript:" id="topbtn" onclick="topbtn()" title="Go To Top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <header id=head class="container">
+        <div class="row" style="width: 100%">
+            <h2 class="col-sm-4"><a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a></h2>
+            <nav class="col-sm-8">
+            </nav>
+            <p id="web" onclick="menu()">MENU</p>
+            <div id=menu class="menu" onclick="menu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+    <section class="container parallax feat" style="margin-top: 0;background-image: url(/static/ParchhayiLogo.jpg)">
+        <div class="row">
+            <h1 style="text-align: center;font-size: 100px; color: white"><b>Parchhayi</b></h1>
+
+            <hr style="width: 60%;margin-left: auto;height: 3px;top:10px">
+            </div>
+    </section>
+    <br><br>
+    <section class="container about">
+        <div class="abtbox col-sm-12" style="width: 90%; height: 100%; left: 5%; padding: 0; margin: 0; overflow: auto">
+            <header>
+                <br><h1 style="text-align: center; color: black">About Us</h1><br>
+            </header>
+            <footer style="text-align: center;color: black;font-size:20px">
+              <p> <font size="6" color="black">
+                Parchhayi is the official photography society of Delhi Technological University and we stand for nurturing the art of photography and its technical
+                aspects in our members and using this to achieve a standard of excellence in photography in our college and as a platform for social awareness.
+                <br>What do we do?<br>
+                An art such as photography can mean different things to different people and therefore it's our responsibility to allow our members a plethora of
+                opportunities to further their interests in the way they like.
+              </font></p>
+            </footer>
+        </div>
+    </section>
+    <br><br>
+    <section class="container parallax" style="max-height: 500px; background-image: url(/static/Parchhayi9.jpg)">
+    </section>
+    <br><br>
+    <hr style="width: 92%;margin-left:4%;height: 2px">
+    <br><br>
+
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <li><a data-toggle="tab" href="#home"><h2>INFO</h2></a></li>
+            <li class="active"><a data-toggle="tab" href="#menu1"><h2>PHOTOS</h2></a></li>
+            <li><a data-toggle="tab" href="#menu2"><h2>CONTACT</h2></a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade">
+              <h3 style="color: black"> <font size = "6"> So far, we've been consistently involved in or organizing these events: <br><br>
+
+1. Photowalks - Delhi is a city where complex pieces of historyfit together like a jigsaw puzzle to form a rich and diverse heritage. A quintessential example would be Chandni Chowk. The society explores this heritage by organizing fortnightly walks to different locations in the city and allowing members to unleash their creativity and apply their concepts to action and getting them reviewed by seniors thereafter. Photowalks are the most consistent way to strengthen your photography skills.
+<br><br>
+2. Phototalks - We organize monthly or bimonthly interaction events in the college itself in form of phototalks, where we tackle concepts and member queries. Catching up during the intense college schedule can be difficult and hence these should be the sessions you should look forward to!
+<br><br>
+3. Exhibition - Every year, we hold an annual exhibition in late August/early September which showcases the best of Parchhayi's works from the previous year as well as photos of the previous year's cultural festival and of the college campus. One of the highlights of Parchhayi, this is the event no one should miss.
+<br><br>
+4. Online events - We organize online events, including competitions periodically. Our online activity will consist of features where we share photographs clicked by our members, or write a blog post on prominent photographers and pioneers or recapture events organized or covered by us. We also run online photography competitions with a variety of prizes or exposure on the table.
+<br><br>
+5. College events - For those who want to indulge in event photography, Parchhayi being the official society of DTU gives you the chance to cover events taking place in college, ranging from auditions to concerts to MUNs to freshers nights. Members also get a chance to work in the cultural festival of DTU, Engifest.
+<br><br>
+6. Last year we also ventured into filmmaking and we're looking to explore it more deeply this year. The senior members of this society have done promising work on videos and films and if you're someone who're interested in taking it seriously, you know where to come.
+<br><br>
+All in all, we hope to grow into technically robust and intrepid photographers through this society, by working and learning together while having fun.
+<br><br>
+
+              </font></h3>
+            </div>
+            <div id="menu1" class="tab-pane fade in active">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                      <img src = "{% static 'Parchhayi1.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                    <img src="{% static 'Parchhayi2.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                      <img src = "{% static 'Parchhayi3.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Parchhayi4.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Parchhayi5.jpg' %}">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Parchhayi6.jpg' %}">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Parchhayi7.jpg' %}">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Parchhayi8.jpg' %}">
+                                  </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="clearfix">
+                                <div id="thumbcarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                      <div class="item active">
+                                          <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static 'Parchhayi1.jpg' %}"/></div>
+                                          <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static 'Parchhayi2.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static 'Parchhayi3.jpg' %}"/></div>
+                                          <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static 'Parchhayi4.jpg' %}"></div>
+                                      </div>
+                                      <div class="item">
+                                          <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{% static 'Parchhayi5.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{% static 'Parchhayi6.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{% static 'Parchhayi7.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{% static 'Parchhayi8.jpg' %}"></div>
+                                      </div>
+                                    </div>
+                                    <a id="left" class="left carousel-control" href="#thumbcarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a id="right" class="right carousel-control" href="#thumbcarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <br>
+              <h3 style="color: black"> <font size = "6"> Facebook: @parchhayidtu <br> <br>
+                  Call: 09999888200 <br> <br>
+                  Website: <a href = "https://www.facebook.com/groups/parchhayi/">https://www.facebook.com/groups/parchhayi/</a> <br><br>
+                  E-mail: parchhayidtu@gmail.com
+                </font></h3>
+            </div>
+            </div>
+            </div>
+    <br><br><br>
+    <footer id=foot class="container">
+        <div class="row">
+            <h1 class="col-sm-4" style="top: -8px;left:10px">
+                <a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a>
+            </h1>
+            <ul class="col-sm-8" style="top: 0;">
+                <li>
+                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour" style="text-decoration: none" class="fa fa-facebook"></a>
+                </li>
+                <li >
+                    <a href="https://twitter.com/DtuSoc" style="text-decoration: none" class="fa fa-twitter"></a>
+                </li>
+                <li >
+                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none" class="fa fa-instagram"></a>
+                </li>
+                <li >
+                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none" class="fa fa-youtube"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

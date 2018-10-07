@@ -1,0 +1,195 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotract</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'index.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="sidenav" class="sidenav">
+    <br>
+    <br>
+    <br>
+    <a href="#abt">About&nbsp;<i class="glyphicon glyphicon-info-sign"></i></a>
+    <br>
+    <hr>
+    <br>
+    <a href="contact.html">Contact&nbsp;<i class="glyphicon glyphicon-earphone"></i></a>
+</div>
+<div id="main">
+    <a href="javascript:" id="topbtn" onclick="topbtn()" title="Go To Top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <header id=head class="container">
+        <div class="row" style="width: 100%">
+            <h2 class="col-sm-4"><a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a></h2>
+            <nav class="col-sm-8">
+            </nav>
+            <p id="web" onclick="menu()">MENU</p>
+            <div id=menu class="menu" onclick="menu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+    <section class="container parallax feat" style="margin-top: 0;background-image: url(/static/RotractLogo.jpg)">
+        <div class="row">
+            <h1 style="text-align: center;font-size: 100px; color: white"><b>Rotract Club</b></h1>
+
+            <hr style="width: 60%;margin-left: auto;height: 3px;top:10px">
+            </div>
+    </section>
+    <br><br>
+    <section class="container about">
+        <div class="abtbox col-sm-12" style="width: 90%; height: 100%; left: 5%; padding: 0; margin: 0; overflow: auto">
+            <header>
+                <br><h1 style="text-align: center; color: black">About Us</h1><br>
+            </header>
+            <footer style="text-align: center;color: black;font-size:20px">
+              <p> <font size="6" color="black">
+                Rotaract is an international organization of young professionals and students ages 18 to 30 that are committed
+                   to service and leadership in their communities and abroad. Established in 1968 by Rotary International, Rotaract is a global network of young people who are changing the world with clubs in over 160 countries.
+                    <br>
+                    The purpose of Rotaract is to provide an opportunity for young men and women to enhance the knowledge and
+                    skills that will assist them in personal development, to address the physical and social needs of their communities,
+                    and to promote better relations between all people worldwide through a framework of friendship and service.
+              </font></p>
+            </footer>
+        </div>
+    </section>
+    <br><br>
+    <section class="container parallax" style="max-height: 500px; background-image: url(/static/Rotract9.jpg)">
+    </section>
+    <br><br>
+    <hr style="width: 92%;margin-left:4%;height: 2px">
+    <br><br>
+
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <li><a data-toggle="tab" href="#home"><h2>INFO</h2></a></li>
+            <li class="active"><a data-toggle="tab" href="#menu1"><h2>PHOTOS</h2></a></li>
+            <li><a data-toggle="tab" href="#menu2"><h2>CONTACT</h2></a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade">
+              <h3 style="color: black"> <font size = "6"> The goals of Rotaract are:
+<br><br>1. To develop professional and leadership skills;
+<br><br>2. To emphasize respect for the rights of others, and to promote ethical standards and the dignity of all useful occupations;
+<br><br>3. To provide opportunities for young people to address the needs and concerns of the community and our world;
+<br><br>4. To provide opportunities for working in cooperation with sponsoring Rotary clubs; and
+<br><br>5. To motivate young people for eventual membership in Rotary."
+
+<br><br>Rotary is a worldwide organization of more than 1.2 million business, professional, and community leaders. Members of Rotary clubs, known as Rotarians, provide humanitarian service, encourage high ethical standards in all vocations, and help build goodwill and peace in the world.
+
+<br><br>There are 33,000 Rotary clubs in more than 200 countries and geographical areas. Clubs are nonpolitical, nonreligious, and open to all cultures, races, and creeds. As signified by the motto Service Above Self, Rotary’s main objective is service — in the community, in the workplace, and throughout the world.
+
+<br><br>This is the initiative taken for providing selfless services to the needful and under-privilidged.
+We as youth of our country thinks that we can bring about changes in the country.
+"Social changes don't happen, they need to be brought"
+
+<br><br>Thus, it is our sincere request to students that only those who are really interested to work should apply .
+
+
+              </font></h3>
+            </div>
+            <div id="menu1" class="tab-pane fade in active">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                      <img src = "{% static 'Rotract1.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                    <img src="{% static 'Rotract2.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                      <img src = "{% static 'Rotract3.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Rotract4.jpg' %}"/>
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Rotract5.jpg' %}">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Rotract6.jpg' %}">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Rotract7.jpg' %}">
+                                  </div>
+                                  <div class="item">
+                                      <img src="{% static 'Rotract8.jpg' %}">
+                                  </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="clearfix">
+                                <div id="thumbcarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                      <div class="item active">
+                                          <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static 'Rotract1.jpg' %}"/></div>
+                                          <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static 'Rotract2.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static 'Rotract3.jpg' %}"/></div>
+                                          <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static 'Rotract4.jpg' %}"></div>
+                                      </div>
+                                      <div class="item">
+                                          <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{% static 'Rotract5.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{% static 'Rotract6.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{% static 'Rotract7.jpg' %}"></div>
+                                          <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{% static 'Rotract8.jpg' %}"></div>
+                                      </div>
+                                    </div>
+                                    <a id="left" class="left carousel-control" href="#thumbcarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a id="right" class="right carousel-control" href="#thumbcarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <br>
+              <h3 style="color: black"> <font size = "6"> Facebook: @rotaractdtu <br> <br>
+                  Call: 09999123456 <br> <br>
+                  Website: <a href = "http://www.rotaractdtu.org">http://www.rotaractdtu.org</a> <br><br>
+                  E-mail: rotractdtu@gmail.com
+                </font></h3>
+            </div>
+            </div>
+            </div>
+    <br><br><br>
+    <footer id=foot class="container">
+        <div class="row">
+            <h1 class="col-sm-4" style="top: -8px;left:10px">
+                <a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a>
+            </h1>
+            <ul class="col-sm-8" style="top: 0;">
+                <li>
+                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour" style="text-decoration: none" class="fa fa-facebook"></a>
+                </li>
+                <li >
+                    <a href="https://twitter.com/DtuSoc" style="text-decoration: none" class="fa fa-twitter"></a>
+                </li>
+                <li >
+                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none" class="fa fa-instagram"></a>
+                </li>
+                <li >
+                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none" class="fa fa-youtube"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
